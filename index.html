@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Deklarasi bahwa dokumen ini menggunakan karakter set UTF-8 untuk mendukung berbagai karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Mengatur viewport agar layout responsif dan sesuai dengan perangkat yang digunakan -->
+    <title>Kedelai Marketplace Andika NIH - Home</title>
+    <!-- Judul halaman yang akan muncul di tab browser -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Menghubungkan file CSS eksternal bernama style.css untuk styling -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Menghubungkan font dan ikon dari CDN Font Awesome -->
+    <style>
+        /* Styling untuk tiga titik dan dropdown */
+        .dots {
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 24px;
+        }
+        
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            background-color: rgb(22, 21, 21);
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /* Menyembunyikan dropdown secara default dan mengatur posisinya ketika terlihat */
+
+        .dropdown a {
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+        }
+        /* Styling link dalam dropdown agar terlihat seperti blok dengan padding */
+
+        .dropdown a:hover {
+            background-color: #000000;
+        }
+        /* Memberikan efek hover pada link dalam dropdown */
+    </style>
+</head>
+<body>
+    <!-- Bagian Header -->
+    <header>
+        <nav>
+            <div class="header-left">
+                <!-- Tiga titik yang memicu dropdown -->
+                <div class="dots" id="dots">
+                    <span>&#9679;</span>
+                    <span>&#9679;</span>
+                    <span>&#9679;</span>
+                </div>
+                <!-- Membuat dropdown untuk pilihan menu produk kedelai -->
+                <div class="dropdown" id="dropdown">
+                    <a href="#organic">Kedelai Organik</a>
+                    <a href="#local">Kedelai Lokal</a>
+                    <a href="#imported">Kedelai Impor</a>
+                </div>
+            </div>
+            <div class="logo">
+                <h1 class="Title">Andika Kedelai Marketplace</h1>
+                <!-- Judul atau logo halaman -->
+            </div>
+            <ul>
+                <!-- Daftar navigasi untuk halaman -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+                <!-- Ikon menu untuk tampilan mobile -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Konten Utama -->
+    <main>
+        <!-- Bagian Hero dengan Efek Parallax -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>Selamat Datang di Andika Kedelai Marketplace</h2>
+                <p>Temukan berbagai jenis kedelai terbaik dengan harga terjangkau untuk usaha Anda.</p>
+                <a href="#products" class="cta-btn">Explore Products</a>
+                <!-- Tombol untuk mengarahkan ke bagian produk -->
+            </div>
+
+            <!-- Bagian Produk Pilihan -->
+            <div id="product-options">
+                <h2>Produk Pilihan Kedelai</h2>
+                <div class="product-list">
+                    <!-- Daftar item produk kedelai -->
+                    <div class="product-item" id="organic">
+                        <h3>Kedelai Organik</h3>
+                        <p>Kedelai organik berkualitas tinggi, cocok untuk industri makanan sehat.</p>
+                    </div>
+                    <div class="product-item" id="local">
+                        <h3>Kedelai Lokal</h3>
+                        <p>Kedelai lokal dengan harga terjangkau dan ketersediaan melimpah.</p>
+                    </div>
+                    <div class="product-item" id="imported">
+                        <h3>Kedelai Impor</h3>
+                        <p>Kedelai impor pilihan dengan kualitas premium untuk berbagai kebutuhan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Tentang Kami -->
+        <section id="about" class="about-section">
+            <h2>Tentang Kami</h2>
+            <p>Andika Kedelai Marketplace adalah platform online yang menyediakan berbagai produk kedelai berkualitas. Kami berkomitmen untuk menyediakan bahan baku terbaik untuk industri makanan dan minuman, dengan harga yang bersaing dan layanan terbaik.</p>
+        </section>
+
+        <!-- Bagian Testimoni -->
+        <section id="testimonials" class="testimonials-section">
+            <h2>Apa Kata Pelanggan?</h2>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <p>"Kedelai di sini sangat berkualitas dan harganya bersaing! Sangat cocok untuk bisnis saya."</p>
+                    <span>- Budi, Pengusaha Tahu</span>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Layanan yang luar biasa! Pengiriman tepat waktu dan produk selalu segar."</p>
+                    <span>- Siti, Pemilik Restoran Vegetarian</span>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Kedelai impor yang saya beli memiliki kualitas terbaik untuk produk susu kedelai kami."</p>
+                    <span>- Andi, Pengusaha Susu Kedelai</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer dengan Form Kontak -->
+    <footer>
+        <div class="footer-container">
+            <div class="contact-form">
+                <h2>Hubungi Kami</h2>
+                <!-- Formulir kontak untuk mengirim pesan -->
+                <form action="submit_form.php" method="POST">
+                    <input type="text" name="name" placeholder="Nama Anda" required>
+                    <input type="email" name="email" placeholder="Email Anda" required>
+                    <textarea name="message" rows="4" placeholder="Pesan Anda" required></textarea>
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+            <p>Developed by Andika Nur Islamy &copy; 2024</p>
+            <!-- Hak cipta footer -->
+            <div class="social-icons">
+                <!-- Ikon media sosial -->
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript untuk Menu Responsif dan Dropdown -->
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('nav ul');
+        const dots = document.getElementById('dots');
+        const dropdown = document.getElementById('dropdown');
+
+        menuIcon.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+        <!-- Fungsi untuk toggle (menampilkan/menyembunyikan) menu navigasi pada tampilan mobile -->
+
+        dots.addEventListener('click', () => {
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
+        
+    </script>
+</body>
+</html>
