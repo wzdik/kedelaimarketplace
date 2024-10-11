@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="container">
+        <h2>Penjumlahan</h2>
+        <div>
+            <label for="bil1">Bilangan pertama</label><br>
+            <input type="number" id="bil1" placeholder="Masukkan bilangan pertama"><br>
+
+            <label for="bil2">Bilangan kedua</label><br>
+            <input type="number" id="bil2" placeholder="Masukkan bilangan kedua"><br>
+
+            <button onclick="jumlah()">Jumlahkan</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+        <div class="result">
+            Hasil: <span id="hasil">0</span>
+        </div>
+    </div>
+
+    <script>
+        function jumlah() {
+            var bil1 = parseFloat(document.getElementById("bil1").value);
+            var bil2 = parseFloat(document.getElementById("bil2").value);
+            var hasil = bil1 + bil2;
+
+            if (!isNaN(hasil)) {
+                document.getElementById("hasil").textContent = hasil;
+            } else {
+                document.getElementById("hasil").textContent = "Input tidak valid";
+            }
+        }
+
+        function reset() {
+            document.getElementById("bil1").value = "";
+            document.getElementById("bil2").value = "";
+            document.getElementById("hasil").textContent = "0";
+        }
+    </script>
+</body>
+</html>
