@@ -1,0 +1,295 @@
+/* Body Styling */
+body {
+    background-image: url('https://gifdb.com/images/high/aesthetic-background-498-x-277-gif-wul4y3ja8vhbg44m.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+header .logo {
+    font-size: 2.8rem;
+    color: #FFD700;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 10px rgba(255, 215, 0, 0.7);
+}
+
+header nav a {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0 25px;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 50px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+header nav a:hover {
+    background-color: #FFD700;
+    transform: scale(1.1);
+    color: #333;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.6);
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+#hero .hero-content h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    animation: heroAnimation 2s ease-out;
+    text-shadow: 0 4px 15px rgba(255, 215, 0, 0.9);
+}
+
+@keyframes heroAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#hero .hero-content p {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-out;
+    text-shadow: 0 2px 10px rgba(255, 215, 0, 0.7);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Produk Section */
+.product-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.product-section h2 {
+    font-size: 3rem;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.product-card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 15px;
+    width: 90%;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+.product-card h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.product-card p {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.product-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.7);
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Add Product Form */
+.add-product {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+
+.add-product h3 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#product-form input {
+    background-color: #333;
+    color: #ddd;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#product-form input:focus {
+    background-color: #444;
+    outline: none;
+}
+
+#product-form button {
+    background-color: #FFD700;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#product-form button:hover {
+    background-color: #e0a700;
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.6);
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.about-section h2 {
+    font-size: 3rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.about-section p {
+    color: #ddd;
+    font-size: 1.3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.contact-section h2 {
+    font-size: 3rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.contact-section p {
+    color: #ddd;
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+.contact-section a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-section a:hover {
+    color: #e0a700;
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Scroll Animation */
+.scroll-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFD700;
+    font-size: 1.2rem;
+    padding: 8px;
+    transition: color 0.3s ease;
+}
+
+.scroll-link:hover {
+    color: #e0a700;
+    transform: scale(1.1);
+}
